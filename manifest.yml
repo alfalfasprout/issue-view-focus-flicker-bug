@@ -1,0 +1,19 @@
+modules:
+  jira:projectPage:
+    - key: issue-view-focus-flicker-bug
+      resource: main
+      title: Forge issue view focus flicker bug
+      layout: basic
+resources:
+  - key: main
+    path: static/app/build
+app:
+  id: ari:cloud:ecosystem::app/1bcf45ed-e174-4efe-af77-5985235fcbaf
+  runtime:
+    name: nodejs18.x
+permissions:
+  scopes:
+    - 'read:jira-work'
+  content:
+    styles:
+      - 'unsafe-inline'
