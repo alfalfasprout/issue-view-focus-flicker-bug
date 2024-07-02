@@ -1,6 +1,18 @@
-# Forge JQL Editor App
+# Forge Atlaskit Issue View Modal Focus Flicker Bug
 
-> **_NOTE:_** I Used the below app to recreate the bug with the issue view modal focus flicker. Follow the same instructions in the example below to run this app and install on your local instance
+Adaption of the `forge-jql-editor-custom-ui` example app to recreate the bug with the issue view modal focus flicker. Follow the same instructions in the example below to run this app and install on your local instance. 
+
+## The Focus Flicker Bug
+* The bug occurs when the Jira Issue View Modal is opened from an existing Atlaskit modal, causing the two open modals to switch the focus between them in a loop.
+* This is visible as the focus state of the buttons on the Issue View Modal visibly flickering when tab is used to try navigate the modal.
+* Adding a console log to `onFocus` of the buttons on the Atlaskit modal shows that the focus is being swapped between the two modals by repeatedly printing to the console.
+
+## Forge App to recreate bug
+* [Loom demo video](https://www.loom.com/share/a8e1e92d567e4794989f36407ca85c14)
+* Works by grabbing the issues in the current project and using the first issue returned as the input for the Jira Issue View Modal
+* Follow on-page instructions to view the bug
+
+# Set up instructions from `forge-jql-editor-custom-ui` example app
 
 [![Atlassian license](https://img.shields.io/badge/license-Apache%202.0-blue.svg?style=flat-square)](LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
 
