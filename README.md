@@ -1,6 +1,6 @@
 # Forge JQL Editor App
 
-# Used the below app to recreate the bug with the issue view modal focus flicker. Follow the same instructions below to run this app
+> **_NOTE:_** I Used the below app to recreate the bug with the issue view modal focus flicker. Follow the same instructions in the example below to run this app and install on your local instance
 
 [![Atlassian license](https://img.shields.io/badge/license-Apache%202.0-blue.svg?style=flat-square)](LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
 
